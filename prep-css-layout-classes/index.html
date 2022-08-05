@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="./images/raiders.jpg" alt="Raiders of the Lost Ark Poster">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra sed eros non tempus. Integer euismod volutpat
+        lacinia. Fusce viverra augue eu magna eleifend viverra. Ut mattis auctor pulvinar. Etiam luctus euismod purus, laoreet
+        dapibus mi elementum quis. Sed sed feugiat enim. Donec varius pulvinar massa. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas.
+        </p>
+      </div>
+      <div class="column"><img src="./images/temple.jpg" alt="Temple of Doom Poster">
+        <h3>Temple of Doom</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra sed eros non tempus. Integer euismod volutpat
+        lacinia. Fusce viverra augue eu magna eleifend viverra. Ut mattis auctor pulvinar. Etiam luctus euismod purus, laoreet
+        dapibus mi elementum quis. Sed sed feugiat enim. Donec varius pulvinar massa. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas.
+        </p>
+      </div>
+      <div class="column">
+        <img src="./images/crusade.jpg" alt="The Last Crusade Poster">
+        <h3>The Last Crusade</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra sed eros non tempus. Integer euismod
+          volutpat
+          lacinia. Fusce viverra augue eu magna eleifend viverra. Ut mattis auctor pulvinar. Etiam luctus euismod purus,
+          laoreet
+          dapibus mi elementum quis. Sed sed feugiat enim. Donec varius pulvinar massa. Pellentesque habitant morbi tristique
+          senectus et netus et malesuada fames ac turpis egestas.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
